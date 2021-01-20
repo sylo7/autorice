@@ -10,11 +10,11 @@ if ! [ -f "$PWD"/install.sh ]; then
     exit
 fi
 
-$PACMAN alacritty alsa-utils bat bspwm capitaine-cursors cmus diff-so-fancy \
-        dunst exa fd feh fzf httpie libnotify maim man-db mpv neofetch neovim \
-        nnn noto-fonts noto-fonts-cjk noto-fonts-emoji picom ripgrep rofi sxhkd \
-        sxiv xclip xorg-server xorg-xinit xorg-xprop xorg-xrandr xorg-xsetroot \
-        zathura-pdf-mupdf
+$PACMAN zsh alsa-utils bat xfce4 xfce4-goodies diff-so-fancy \
+        mpv neofetch intel-ucode nvidia cpupower mesa acpi \
+        noto-fonts noto-fonts-cjk noto-fonts-emoji picom ripgrep  \
+        xorg-server xorg-xinit xorg-xprop xorg-xrandr xorg-xsetroot \
+        
     
 # Make the needed directories for this script to succeed.
 mkdir -p "$HOME"/.config/nnn/plugins "$HOME"/.local/share "$HOME"/.icons/default
