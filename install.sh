@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PACMAN='sudo pacman -S'
-YAY='yay -S'
+
 LINKHERE="$PWD"
 
 # This needs to be run from the directory that contains it to properly link the files.
@@ -10,14 +10,19 @@ if ! [ -f "$PWD"/install.sh ]; then
     exit
 fi
 
-$PACMAN zsh emacs alsa-utils bat xfce4 xfce4-goodies diff-so-fancy \
-        mpv neofetch intel-ucode nvidia cpupower mesa acpi \
-        noto-fonts noto-fonts-cjk noto-fonts-emoji picom ripgrep  \
-        xorg-server xorg-xinit xorg-xprop xorg-xrandr xorg-xsetroot \
-        
+$PACMAN zsh emacs alsa-utils bat xfce4 xfce4-goodies diff-so-fancy git \
+        mpv neofetch intel-ucode nvidia cpupower mesa acpi libreoffice-still \
+        noto-fonts noto-fonts-cjk noto-fonts-emoji picom ripgrep vim flameshot \
+        xorg-server xorg-xinit xorg-xprop xorg-xrandr xorg-xsetroot htop gparted \
+        nomacs celluloid albert qbittorrent nvidia-utils flatpak firefox \
+        pulseaudio ffmpeg gstreamer gst-libav gst-plugins-good gst-plugins-base \
+        flac a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
+        libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins \
+        jasper lame libdca libdv libmad  opus \
     
+
 # Make the needed directories for this script to succeed.
-mkdir -p "$HOME"/.config/nnn/plugins "$HOME"/.local/share "$HOME"/.icons/default
+mkdir -p "$HOME"/.local/share "$HOME"/.icons/default
 
 # Put the dotfiles where they belong
 ln -sf "$LINKHERE"/home/.* "$HOME"
