@@ -1,6 +1,7 @@
 #!/bin/sh
 
 PACMAN='sudo pacman -S'
+YAY='yay -S'
 LINKHERE="$PWD"
 
 # This needs to be run from the directory that contains it to properly link the files.
