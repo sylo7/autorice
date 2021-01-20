@@ -28,10 +28,3 @@ ln -s "$LINKHERE"/local/share/applications "$HOME"/.local/share
 
 # Set the default mouse cursor
 ln -s "$LINKHERE"/other/index.theme "$HOME"/.icons/default
-
-# Install nnn plugins
-curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
-
-# Install vim-plug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
