@@ -19,7 +19,8 @@ $PACMAN zsh emacs alsa-utils bat xfce4 xfce4-goodies diff-so-fancy git \
         flac a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
         libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins \
         jasper lame libdca libdv libmad  opus tor tor-browser-launcher curl\
-	youtube-dl youtube-viewer wget gnome-boxes neofetch cups cups-pdf\
+        youtube-dl youtube-viewer wget gnome-boxes neofetch cups cups-pdf\
+        acpilight bluez bluez-utils blueman acpid stystemd-ui
 
 
 # Make the needed directories for this script to succeed.
