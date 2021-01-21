@@ -18,8 +18,9 @@ $PACMAN zsh emacs alsa-utils bat xfce4 xfce4-goodies diff-so-fancy git \
         pulseaudio ffmpeg gstreamer gst-libav gst-plugins-good gst-plugins-base \
         flac a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
         libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins \
-        jasper lame libdca libdv libmad  opus \
-    
+        jasper lame libdca libdv libmad  opus tor tor-browser-launcher curl\
+	youtube-dl youtube-viewer wget gnome-boxes neofetch cups cups-pdf\
+
 
 # Make the needed directories for this script to succeed.
 mkdir -p "$HOME"/.local/share "$HOME"/.icons/default
