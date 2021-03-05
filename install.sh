@@ -17,21 +17,9 @@ $PACMAN zsh alsa-utils bat xfce4 xfce4-goodies diff-so-fancy git \
         nomacs celluloid albert qbittorrent nvidia-utils flatpak firefox \
         pulseaudio ffmpeg gstreamer gst-libav gst-plugins-good gst-plugins-base \
         flac a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
-        libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins \
+        libtheora libvorbis libxv wavpack x264 xvidcore \
         jasper lame libdca libdv libmad  opus tor tor-browser-launcher curl\
         youtube-dl youtube-viewer wget gnome-boxes neofetch cups cups-pdf\
-        acpilight bluez bluez-utils blueman acpid stystemd-ui
+        acpilight bluez bluez-utils blueman acpid systemd-ui
 
 
-# Make the needed directories for this script to succeed.
-mkdir -p "$HOME"/.local/share "$HOME"/.icons/default
-
-# Put the dotfiles where they belong
-ln -sf "$LINKHERE"/home/.* "$HOME"
-ln -sf "$LINKHERE"/config/* "$HOME"/.config/
-
-# Default application settings (xdg-open pdfs and images)
-ln -s "$LINKHERE"/local/share/applications "$HOME"/.local/share
-
-# Set the default mouse cursor
-ln -s "$LINKHERE"/other/index.theme "$HOME"/.icons/default
