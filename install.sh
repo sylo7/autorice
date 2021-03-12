@@ -10,7 +10,7 @@ if ! [ -f "$PWD"/install.sh ]; then
     exit
 fi
 
-$PACMAN zsh alsa-utils bat xfce4 xfce4-goodies diff-so-fancy git \
+$PACMAN zsh alsa-utils bat diff-so-fancy git \
         mpv neofetch intel-ucode nvidia cpupower mesa acpi libreoffice-still \
         noto-fonts noto-fonts-cjk noto-fonts-emoji picom ripgrep vim flameshot \
         xorg-server xorg-xinit xorg-xprop xorg-xrandr xorg-xsetroot htop gparted \
